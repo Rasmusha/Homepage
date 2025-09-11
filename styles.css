@@ -1,0 +1,59 @@
+:root {
+    --dark-green: rgb(31,69,41);
+    --button-color: rgb(252,186,3)
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    background-color: var(--dark-green);
+    width: 90%;
+    margin: 1rem auto 0;
+    border-radius: 5px;
+    position: fixed;
+    z-index: 1000;
+    top: 0.5rem;
+    left: 0;
+    right: 0;
+}
+
+nav {
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+}
+
+nav ul li {
+    margin: 0 1rem;
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: white;
+}
+
+.contact-button {
+    background-color: var(--button-color);
+    border: none;
+    padding: 0.7rem 1.5rem;
+    border-radius: 5px;
+    color: white;
+}
+
+.hero-section {
+    height: 100vh;
+    background-image: ;
+}
