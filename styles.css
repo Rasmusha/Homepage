@@ -1,0 +1,108 @@
+:root {
+    --dark-green: rgb(31,69,41);
+    --button-color: rgb(252,186,3)
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    background-color: rgba(31, 69, 41, 1);
+    width: 90%;
+    margin: 1rem auto 0;
+    border-radius: 5px;
+    position: fixed;
+    z-index: 1000;
+    top: 0.5rem;
+    left: 0;
+    right: 0;
+}
+
+nav {
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+}
+
+nav ul li {
+    margin: 0 1rem;
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: white;
+}
+
+.contact-button {
+    background-color: var(--button-color);
+    border: none;
+    padding: 0.7rem 1.5rem;
+    border-radius: 5px;
+    color: white;
+}
+
+.hero-section {
+    height: 100vh;
+    background-image: url(images/pexels-laura-lumimaa-1119727985-26599022.jpg);
+    background-position: center;
+    background-size:cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.hero-content {
+    background-color: rgba(0,0,0,0.3);
+    padding:2rem;
+    border-radius: 10px;
+}
+
+.hero-content h1 {
+    font-size: 3rem;
+    color: white;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+}
+
+.hero-content p {
+    font-size: 1.2rem;
+    color: white;
+    line-height: 1.5;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.8);
+}
+
+.why-us-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgb(249,250,249);
+    padding: 4rem;
+}
+
+.why-us-section-cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 5rem;
+    padding: 2rem;
+}
+
+.why-us-section-card {
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 4rem;
+    box-shadow: 0px 4px 20px 0px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}

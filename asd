@@ -138,7 +138,7 @@
           <article class="card">
             <h3>Verkkosivut</h3>
             <p>Modernit ja responsiiviset sivut (WordPress tai no‑code). Sisältää perusoptimoinnit.</p>
-            <span class="chip">Peruspaketti</span>
+            
           </article>
           <article class="card">
             <h3>IT‑tuki</h3>
