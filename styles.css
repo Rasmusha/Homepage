@@ -14,7 +14,7 @@ header {
     justify-content: space-between;
     align-items: center;
     padding: 1rem 2rem;
-    background-color: rgba(31, 69, 41, 1);
+    background-color: var(--dark-green);
     width: 90%;
     margin: 1rem auto 0;
     border-radius: 5px;
@@ -29,6 +29,14 @@ nav {
     display: flex;
     gap: 2rem;
     align-items: center;
+}
+
+.cta-button {
+    text-decoration: none;
+    color: black;
+    background-color: var(--button-color);
+    padding: 1rem;
+    border-radius: 4px;
 }
 
 nav ul {
@@ -54,44 +62,67 @@ nav ul li a{
 }
 
 .hero-section {
-    height: 100vh;
-    background-image: url(images/pexels-laura-lumimaa-1119727985-26599022.jpg);
-    background-position: center;
-    background-size:cover;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    width: 100%;
+    height: 80vh;
+    background-image: url(images/kilpisjarvi-2530769_1920.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
-.hero-content {
-    background-color: rgba(0,0,0,0.3);
-    padding:2rem;
-    border-radius: 10px;
+.why-us {
+    background-color: rgb(249, 250, 249);
 }
 
-.hero-content h1 {
-    font-size: 3rem;
+.why-us__reason-title,
+.why-us__reason-description {
+    transition: color 0.3s ease;
+}
+
+.why-us__reason:hover .why-us__reason-title {
     color: white;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
 }
 
-.hero-content p {
-    font-size: 1.2rem;
+.why-us__reason:hover .why-us__reason-description {
     color: white;
-    line-height: 1.5;
-    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.8);
 }
 
 .container {
     max-width: 80rem;
     width: 100%;
+    margin: auto;
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin: auto;
+    gap: clamp(3rem, 6vw, 4rem);
+    
 }
 
-.why-us-section {
+.why-us__reasons {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
     width: 100%;
+    gap: 2rem;
+}
+
+.why-us__reason {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1);
+    padding: 2rem;
+    transition: 0.3s ease;
+    border-radius: 5px;
+
+}
+
+.why-us__reason:hover {
+    background-color: var(--dark-green);
+    transform: translateY(-5px) scale(1.02);
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.2);
+}
+
+.why-us__reason h3 {
+
+    
 }
 
