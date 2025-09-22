@@ -9,9 +9,7 @@
 <body>
         <header class="header">
             <div class="logo">
-                <picture>
-                    <img src="" alt="">
-                </picture>
+                <img class="logo" src="svgs/pine-tree.svg" alt="">
             </div>
             <nav>
                 <ul>
@@ -26,14 +24,19 @@
         <section class="hero-section">
             <div class="container">
                 <div class="hero-content">
-                    <h1>Joku hieno teksti tähän</h1>
-                    <p>Läpäläpää lässynää Läpäläpää lässynää<br>
-                    Läpäläpää lässynää Läpäläpää lässynää<br>
-                    Läpäläpää lässynää Läpäläpää lässynää<br>
-                    Läpäläpää lässynää Läpäläpää lässynää
+                    <h1>Kun muut eksyvät digimetsään - minä tunnen polut.</h1>
+                    <p>Autan sinua löytämään parhaat ratkaisut verkkosivujesi suunnittelussa ja toteutuksessa.<br>
+                    En käytä sivunrakentajia tai WordPressiä vaan koodaan sivut käsin juuri sinun tarpeisiisi sopiviksi<br>
+                    Saat täysin kustomoidut, nopeat ja tietoturvalliset sivut<br>
                     </p>
                 </div>
+                <picture>
+                    <source media="(max-width: 600px)" srcset="mobile-bg.webp">
+                    <source media="(max-width: 601px)" srcset="desktop-bg.webp">
+                <img class="svg" src="svgs/pine-tree.svg" alt="">
+            </picture>
             </div>
+            
         </section>
         <section class="why-us">
             <div class="container">
@@ -74,7 +77,7 @@
                         sivut sinun yrityksellesi tarvitaan ja mitä niiden tulee sisältää.
                     </p>
                 </div>
-                <div class="portfolio-item">
+                <div class="process__step">
                     <h3 class="process__step-number">2. Suunnittelu</h3>
                     <p class="process__step-text">
                         Luon sinulle visuaalisen luonnoksen sivustista. Suunnittelemme yhdessä
@@ -82,23 +85,82 @@
                         Saat nähdä, miltä sivustosi tulee näyttämään ennen toteutusta.
                     </p>
                 </div>
-                <div class="portfolio-item">
-                    <picture></picture>
-                    <div>
-                        <p></p>
-                    </div>
+                 <div class="process__step">
+                    <h3 class="process__step-number">2. Suunnittelu</h3>
+                    <p class="process__step-text">
+                        Luon sinulle visuaalisen luonnoksen sivustista. Suunnittelemme yhdessä
+                        rakenteen, ulkoasun ja sisällöt, jotka tukevat yrityksesi tavoitteita.
+                        Saat nähdä, miltä sivustosi tulee näyttämään ennen toteutusta.
+                    </p>
+                </div>
+                 <div class="process__step">
+                    <h3 class="process__step-number">2. Suunnittelu</h3>
+                    <p class="process__step-text">
+                        Luon sinulle visuaalisen luonnoksen sivustista. Suunnittelemme yhdessä
+                        rakenteen, ulkoasun ja sisällöt, jotka tukevat yrityksesi tavoitteita.
+                        Saat nähdä, miltä sivustosi tulee näyttämään ennen toteutusta.
+                    </p>
                 </div>
             </div>
             </div>
         </section>
-        <section class="contact">
-            <h2>Ota yhteyttä!</h2>
-            <form action="">
-                <input type="text" name="" id="" placeholder="Nimi" required>
-                <input type="text" name="" id="" placeholder="Sähköposti" required>
-                <textarea placeholder="Viesti" required></textarea>
-                <button type="submit">Lähetä</button>
-            </form>
+        <section class="services">
+            <div class="container">
+                <div class="services__description">
+                    <h2 class="services__title">Palvelut ja Hinnasto</h2>
+                    <p class="services__content">Jottain</p>
+                </div>
+                <ul class="services__cards">
+                    <li class="services__card">
+                        <h3 class="services_card-title">Peruspaketti</h3>
+                        <ul>
+                            <li>Suunnittelu ja Toteutus <img src="" alt=""></li>
+                            <li>1-5 sivua <img src="" alt=""></li>
+                            <li>Perustason hakukoneoptimointi <img src="" alt=""></li>
+                            <li>Nopeusoptimointi <img src="" alt=""></li>
+                            <li>Responsiivinen toteutus <img src="" alt=""></li>
+                            <li>Lisäsivut 100€ / kpl <img src="" alt=""></li>
+                            <li>Hosting 20€ vuosi <img src="" alt=""></li>
+                            <li>Rajattomat muutokset <img src="" alt=""></li>
+                            <li>Jatkuvat tuki <img src="" alt=""></li>
+                        </ul>
+                        <span>700-1500 €</span>
+                        <a href="">Ota Yhteyttä</a>
+                    </li>
+                    <li class="services__card">
+                        <h3 class="services_card-title">Kuukausitilaus</h3>
+                        <ul>
+                            <li>Suunnittelu ja Toteutus <img src="" alt=""></li>
+                            <li>1-5 sivua <img src="" alt=""></li>
+                            <li>Perustason hakukoneoptimointi <img src="" alt=""></li>
+                            <li>Nopeusoptimointi <img src="" alt=""></li>
+                            <li>Responsiivinen toteutus <img src="" alt=""></li>
+                            <li>Lisäsivut 100€ / kpl <img src="" alt=""></li>
+                            <li>Hosting 20€ vuosi <img src="" alt=""></li>
+                            <li>Rajattomat muutokset <img src="" alt=""></li>
+                            <li>Jatkuvat tuki <img src="" alt=""></li>
+                        </ul>
+                        <span>150 € / kk</span>
+                        <a href="">Ota Yhteyttä</a>
+                    </li>
+                    <li class="services__card">
+                        <h3 class="services_card-title">Verkkokauppa</h3>
+                        <ul>
+                            <li>Suunnittelu ja Toteutus <img src="" alt=""></li>
+                            <li>1-5 sivua <img src="" alt=""></li>
+                            <li>Perustason hakukoneoptimointi <img src="" alt=""></li>
+                            <li>Nopeusoptimointi <img src="" alt=""></li>
+                            <li>Responsiivinen toteutus <img src="" alt=""></li>
+                            <li>Lisäsivut 100€ / kpl <img src="" alt=""></li>
+                            <li>Hosting 20€ vuosi <img src="" alt=""></li>
+                            <li>Rajattomat muutokset <img src="" alt=""></li>
+                            <li>Jatkuvat tuki <img src="" alt=""></li>
+                        </ul>
+                        <span>alk.3000 €</span>
+                        <a href="">Ota yhteyttä</a>
+                    </li>
+                </ul>
+            </div>
         </section>
         </main>
 
