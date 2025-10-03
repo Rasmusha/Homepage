@@ -7,62 +7,115 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-        <header class="header">
-            <div class="logo">
-                <img class="logo" src="svgs/pine-tree.svg" alt="">
-            </div>
+        <header id="header">
+            <div class="container">
+            <a class="logo" href="" aria-label="back to home">
+                <img src="svgs/KorpiKoodari(3).svg" alt="">
+            </a>
             <nav>
-                <ul>
-                    <li><a href="#services">Palvelut</a></li>
-                    <li><a href="#services">Portfolio</a></li>
-                    <li><a href="#contact">Yhteystiedot</a></li>
-                </ul>
-                <a class="cta-button" href="">Ota Yhteyttä</a>
+                <button class="toggle" aria-label="mobile menu toggle">
+                    <div class="toggle-box" aria-hidden="true">
+                        <span class="toggle-line toggle-line1" aria-hidden="true"></span>
+                        <span class="toggle-line toggle-line2" aria-hidden="true"></span>
+                        <span class="toggle-line toggle-line3" aria-hidden="true"></span>
+                    </div>
+                </button>
+                <div class="ul-wrapper">
+                    <ul id="expanded" aria-expanded="false" class="nav-ul">
+                        <li class="nav-li">
+                            <a class="nav-li-link active" href="#services">Koti</a></li>
+                        <li class="nav-li">
+                            <a class="nav-li-link" href="#services">Portfolio</a></li>
+                        <li class="nav-li">
+                            <a class="nav-li-link" href="#contact">Yhteystiedot</a></li>
+                    </ul>
+                </div>
             </nav>
+            <a class="cta-button" href="">Ota Yhteyttä</a>
+            </div>
         </header>
         <main>
         <section class="hero-section">
             <div class="container">
                 <div class="hero-content">
-                    <h1>Kun muut eksyvät digimetsään - minä tunnen polut.</h1>
-                    <p>Autan sinua löytämään parhaat ratkaisut verkkosivujesi suunnittelussa ja toteutuksessa.<br>
+                    <h1 class="hero-title">Kun muut eksyvät digimetsään - minä tunnen polut.</h1>
+                    <p class="hero-text">Autan sinua löytämään parhaat ratkaisut verkkosivujesi suunnittelussa ja toteutuksessa.<br>
                     En käytä sivunrakentajia tai WordPressiä vaan koodaan sivut käsin juuri sinun tarpeisiisi sopiviksi<br>
                     Saat täysin kustomoidut, nopeat ja tietoturvalliset sivut<br>
                     </p>
                 </div>
+                <picture class="hero-picture">
+                    <source media="(max-width: 600px)" srcset="">
+                    <source media="(min-width: 1024px)" srcset="">
+                    <img aria-hidden="true" decoding="async" src="" alt="" 
+                    width="570" height="701">
+                </picture>
+                
             </div>
-            <div class="hero__forest">
-                <img src="/svgs/1543178897.svg" alt="Metsäsiluetti" class="hero__forest-image">
-            </div>
+            <svg class="cs-wave" width="1920" height="179" viewBox="0 0 1920 179" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path fill-rule="evenodd" clip-rule="evenodd" d="M1920 179V91.3463C1835.33 91.3463 1715.47 76.615 1549.2 32.9521C1299.48 -32.3214 1132.77 12.1006 947.32 61.5167C810.762 97.9044 664.042 137 466.533 137C331.607 137 256.468 123.447 188.082 111.113C130.974 100.812 78.5746 91.3609 0 91.3609V179H1920Z" fill="white"/>
+    </svg>
         </section>
         <section class="why-us">
             <div class="container">
+                
                 <div class="why-us__text">
                     <div class="why-us__text-flex">
-                        <span class="topper">Miksi valita meidät</span>
-                        <h2>Palvelut</h2>
+                        <span class="topper">Miksi valita minut</span>
+                        <h2>Luotettava kumppani verkkosivujesi toteutukseen</h2>
                     </div>
-                    <p>teme hienot sivut juu kyllä niin</p>
+                    <p>teme hienot sivut juu kyllä niinteme hienot sivut juu kyllä niinteme hienot sivut juu kyllä niinteme hienot sivut juu kyllä niinteme hienot sivut juu kyllä niinteme hienot sivut juu kyllä niinteme hienot sivut juu kyllä niin</p>
                 </div>
-                <div class="why-us__reasons">
-                    <article class="why-us__reason">
-                        <h3 class="why-us__reason-title">Responsiivisuus</h3>
-                        <p class="why-us__reason-description">Modernit ja responsiiviset sivut</p>
-                    </article>
-                    <article class="why-us__reason">
-                        <h3 class="why-us__reason-title">Hakukoneoptimointi</h3>
-                        <p class="why-us__reason-description">Sivusi löytyy hakukoneissa</p>
-                    </article>
-                    <article class="why-us__reason">
-                        <h3 class="why-us__reason-title">Nopeusoptimointi</h3>
-                        <p class="why-us__reason-description">Optimoimme sivun nopeuden</p>
-                    </article>
-                </div>
+                <ul class="why-us__reasons">
+                    <li class="why-us__reason">
+                        <a class="why-us__reason-link" href="">
+                            <picture class="why-us__reason-icon-wrapper">
+                                <img class="why-us__reason-icon" src="svgs/mobile-friendly.svg" alt="">
+                            </picture>
+                            <h3 class="why-us__reason-title">Responsiivisuus</h3>
+                            <p class="why-us__reason-description">Modernit ja responsiiviset sivut</p>
+                            <span class="fake-link">Lue lisää</span>
+                        </a> 
+                    </li>
+                    <li class="why-us__reason">
+                        <a class="why-us__reason-link" href="">
+                            <picture class="why-us__reason-icon-wrapper">
+                                <img class="why-us__reason-icon" src="svgs/mobile-friendly.svg" alt="">
+                            </picture>
+                            <h3 class="why-us__reason-title">Responsiivisuus</h3>
+                            <p class="why-us__reason-description">Modernit ja responsiiviset sivut</p>
+                            <span class="fake-link">Lue lisää</span>
+                        </a> 
+                    </li>
+                    <li class="why-us__reason">
+                        <a class="why-us__reason-link" href="">
+                            <picture class="why-us__reason-icon-wrapper">
+                                <img class="why-us__reason-icon" src="svgs/discover.svg" alt="">
+                            </picture>
+                            <h3 class="why-us__reason-title">Hakukoneoptimointi</h3>
+                            <p class="why-us__reason-description">Sivusi löytyy hakukoneissa</p>
+                            <span class="fake-link">Lue lisää</span>
+                        </a>
+
+                    </li>
+                    <li class="why-us__reason">
+                        <a class="why-us__reason-link" href="">
+                            <picture class="why-us__reason-icon-wrapper">
+                                <img class="why-us__reason-icon" src="svgs/tachometer-alt-fastest.svg" alt="">
+                            </picture>
+                            <h3 class="why-us__reason-title">Nopeusoptimointi</h3>
+                            <p class="why-us__reason-description">Optimoimme sivun nopeuden</p>
+                            <span class="fake-link">Lue lisää</span>
+                        </a>
+                        
+                    </li>
+                </ul>
             </div>
         </section>
         <section class="process">
             <div class="container">
                 <div class="process__description">
+                    <span class="topper">Prosessi</span>
                     <h2 class="process__title">Miten prosessi toimii</h2>
                     <p class="process__content">Teemme verkkosivusi rakentamisesta sujuvan ja 
                         läpinäkyvän prosessin. Jokaisessa vaiheessa kuuntelemme toiveitasi,
@@ -70,104 +123,160 @@
                          vastaa odotuksiasi. Tavoitteemme on luoda 
                          sinulle sivut, jotka toimivat, näyttävät hyvältä 
                         ja tuovat yrityksellesi näkyvyyttä ja asiakkaita.</p>
+                        <a class="cta-button" href="">Lue lisää</a>
                 </div>
-            <div class="process__steps">
-                <div class="process__step">
-                    <h3 class="process__step-number">1. Alkukartoitus</h3>
-                    <p class="process__step-text">
-                        Keskustelemme toiveistasi ja tarpeistasi. Selvitämmme, millaisia
-                        sivut sinun yrityksellesi tarvitaan ja mitä niiden tulee sisältää.
-                    </p>
-                </div>
-                <div class="process__step">
-                    <h3 class="process__step-number">2. Suunnittelu</h3>
-                    <p class="process__step-text">
-                        Luon sinulle visuaalisen luonnoksen sivustista. Suunnittelemme yhdessä
-                        rakenteen, ulkoasun ja sisällöt, jotka tukevat yrityksesi tavoitteita.
-                        Saat nähdä, miltä sivustosi tulee näyttämään ennen toteutusta.
-                    </p>
-                </div>
-                 <div class="process__step">
-                    <h3 class="process__step-number">2. Suunnittelu</h3>
-                    <p class="process__step-text">
-                        Luon sinulle visuaalisen luonnoksen sivustista. Suunnittelemme yhdessä
-                        rakenteen, ulkoasun ja sisällöt, jotka tukevat yrityksesi tavoitteita.
-                        Saat nähdä, miltä sivustosi tulee näyttämään ennen toteutusta.
-                    </p>
-                </div>
-                 <div class="process__step">
-                    <h3 class="process__step-number">2. Suunnittelu</h3>
-                    <p class="process__step-text">
-                        Luon sinulle visuaalisen luonnoksen sivustista. Suunnittelemme yhdessä
-                        rakenteen, ulkoasun ja sisällöt, jotka tukevat yrityksesi tavoitteita.
-                        Saat nähdä, miltä sivustosi tulee näyttämään ennen toteutusta.
-                    </p>
-                </div>
-            </div>
+            <ul class="process__steps">
+                <li class="process__step">
+                    <span class="process__step-number">1</span>
+                    <div class="process_step-content">
+                        <h3 class="process__step-title">Yks</h3>
+                        <p class="process__step-text">
+                             sit amet, consectetur adipiscing elit. At tortor facilisis non.
+                        </p>
+                    </div>
+                </li>
+                <li class="process__step">
+                    <span class="process__step-number">2</span>
+                    <div class="process_step-content">
+                        <h3 class="process__step-title">Kaks</h3>
+                        <p class="process__step-text">
+                             sit amet, consectetur adipiscing elit. At tortor facilisis non.
+                        </p>
+                    </div>
+                </li>
+                <li class="process__step">
+                    <span class="process__step-number">3</span>
+                    <div class="process_step-content">
+                        <h3 class="process__step-title">Kolme</h3>
+                        <p class="process__step-text">
+                             sit amet, consectetur adipiscing elit. At tortor facilisis non.
+                        </p>
+                    </div>
+                </li>
+                <li class="process__step">
+                    <span class="process__step-number">4</span>
+                    <div class="process_step-content">
+                        <h3 class="process__step-title">Neljä</h3>
+                        <p class="process__step-text">
+                             sit amet, consectetur adipiscing elit. At tortor facilisis non.
+                        </p>
+                    </div>
+                </li>
+                </ul>
+            
             </div>
         </section>
         <section class="services">
             <div class="container">
                 <div class="services__description">
-                    <h2 class="services__title">Palvelut ja Hinnasto</h2>
-                    <p class="services__content">Jottain</p>
+                    <span class="topper">Hinnasto</span>
+                    <h2 class="services__title">Valitse palvelu sinun tarpeisiisi</h2>
                 </div>
-                <ul class="services__cards">
-                    <li class="services__card">
-                        <h3 class="services_card-title">Peruspaketti</h3>
-                        <ul>
-                            <li>Suunnittelu ja Toteutus <img src="" alt=""></li>
-                            <li>1-5 sivua <img src="" alt=""></li>
-                            <li>Perustason hakukoneoptimointi <img src="" alt=""></li>
-                            <li>Nopeusoptimointi <img src="" alt=""></li>
-                            <li>Responsiivinen toteutus <img src="" alt=""></li>
-                            <li>Lisäsivut 100€ / kpl <img src="" alt=""></li>
-                            <li>Hosting 20€ vuosi <img src="" alt=""></li>
-                            <li>Rajattomat muutokset <img src="" alt=""></li>
-                            <li>Jatkuvat tuki <img src="" alt=""></li>
-                        </ul>
-                        <span>700-1500 €</span>
-                        <a href="">Ota Yhteyttä</a>
-                    </li>
-                    <li class="services__card">
-                        <h3 class="services_card-title">Kuukausitilaus</h3>
-                        <ul>
-                            <li>Suunnittelu ja Toteutus <img src="" alt=""></li>
-                            <li>1-5 sivua <img src="" alt=""></li>
-                            <li>Perustason hakukoneoptimointi <img src="" alt=""></li>
-                            <li>Nopeusoptimointi <img src="" alt=""></li>
-                            <li>Responsiivinen toteutus <img src="" alt=""></li>
-                            <li>Lisäsivut 100€ / kpl <img src="" alt=""></li>
-                            <li>Hosting 20€ vuosi <img src="" alt=""></li>
-                            <li>Rajattomat muutokset <img src="" alt=""></li>
-                            <li>Jatkuvat tuki <img src="" alt=""></li>
-                        </ul>
-                        <span>150 € / kk</span>
-                        <a href="">Ota Yhteyttä</a>
-                    </li>
-                    <li class="services__card">
-                        <h3 class="services_card-title">Verkkokauppa</h3>
-                        <ul>
-                            <li>Suunnittelu ja Toteutus <img src="" alt=""></li>
-                            <li>1-5 sivua <img src="" alt=""></li>
-                            <li>Perustason hakukoneoptimointi <img src="" alt=""></li>
-                            <li>Nopeusoptimointi <img src="" alt=""></li>
-                            <li>Responsiivinen toteutus <img src="" alt=""></li>
-                            <li>Lisäsivut 100€ / kpl <img src="" alt=""></li>
-                            <li>Hosting 20€ vuosi <img src="" alt=""></li>
-                            <li>Rajattomat muutokset <img src="" alt=""></li>
-                            <li>Jatkuvat tuki <img src="" alt=""></li>
-                        </ul>
-                        <span>alk.3000 €</span>
-                        <a href="">Ota yhteyttä</a>
-                    </li>
-                </ul>
+                    <ul class="services__cards">
+                        <li class="services__card">
+                            <h3 class="services_card-title">Peruspaketti</h3>
+                            <ul>
+                                <li>Suunnittelu ja Toteutus <img loading="lazy"  class="service-icon" src="svgs/check.svg" alt=""></li>
+                                <li>1-5 sivua <img loading="lazy"  class="service-icon" src="svgs/check.svg" alt=""></li>
+                                <li>Perustason hakukoneoptimointi <img loading="lazy"  class="service-icon" src="svgs/check.svg" alt=""></li>
+                                <li>Nopeusoptimointi <img loading="lazy"  class="service-icon" src="svgs/check.svg" alt=""></li>
+                                <li>Responsiivinen toteutus <img loading="lazy"  class="service-icon" src="svgs/check.svg" alt=""></li>
+                                <li>Lisäsivut 100€ / kpl <img loading="lazy"  class="service-icon" src="svgs/check.svg" alt=""></li>
+                                <li>Hosting 20€ vuosi <img loading="lazy"  class="service-icon" src="svgs/check.svg" alt=""></li>
+                                <li>Rajattomat muutokset <img loading="lazy"  class="service-icon" src="svgs/cross.svg" alt=""></li>
+                                <li>Jatkuvat tuki <img loading="lazy"  class="service-icon" src="svgs/cross.svg" alt=""></li>
+                            </ul>
+                            <span class="price">700-1500 €</span>
+                            <a href="">Ota Yhteyttä</a>
+                        </li>
+                        <li class="services__card">
+                            <h3 class="services_card-title">Kuukausitilaus</h3>
+                            <ul>
+                                <li>Suunnittelu ja Toteutus <img loading="lazy"  class="service-icon" src="svgs/check.svg" alt=""></li>
+                                <li>1-5 sivua <img loading="lazy"  class="service-icon" src="svgs/check.svg" alt=""></li>
+                                <li>Perustason hakukoneoptimointi <img loading="lazy"  class="service-icon" src="svgs/check.svg" alt=""></li>
+                                <li>Nopeusoptimointi <img loading="lazy"  class="service-icon" src="svgs/check.svg" alt=""></li>
+                                <li>Responsiivinen toteutus <img loading="lazy"  class="service-icon" src="svgs/check.svg" alt=""></li>
+                                <li>Lisäsivut 100€ / kpl <img loading="lazy"  class="service-icon" src="svgs/check.svg" alt=""></li>
+                                <li>Hosting 20€ vuosi <img loading="lazy"  class="service-icon" src="svgs/check.svg" alt=""></li>
+                                <li>Rajattomat muutokset <img loading="lazy"  class="service-icon" src="svgs/check.svg" alt=""></li>
+                                <li>Jatkuvat tuki <img loading="lazy"  class="service-icon" src="svgs/check.svg" alt=""></li>
+                            </ul>
+                            <span class="price">150 € / kk</span>
+                            <a href="">Ota Yhteyttä</a>
+                        </li>
+                        <li class="services__card">
+                            <h3 class="services_card-title">Verkkokauppa</h3>
+                            <ul>
+                                <li>Suunnittelu ja Toteutus 
+                                    <img loading="lazy" class="service-icon" src="svgs/check.svg" alt=""></li>
+                                <li>1-5 sivua <img loading="lazy"  class="service-icon" src="svgs/check.svg" alt=""></li>
+                                <li>Perustason hakukoneoptimointi <img loading="lazy"  class="service-icon" src="svgs/check.svg" alt=""></li>
+                                <li>Nopeusoptimointi <img loading="lazy"  class="service-icon" src="svgs/check.svg" alt=""></li>
+                                <li>Responsiivinen toteutus <img loading="lazy"  class="service-icon" src="svgs/check.svg" alt=""></li>
+                                <li>Lisäsivut 100€ / kpl <img loading="lazy"  class="service-icon" src="svgs/check.svg" alt=""></li>
+                                <li>Hosting 20€ vuosi <img loading="lazy"  class="service-icon" src="svgs/check.svg" alt=""></li>
+                                <li>Rajattomat muutokset <img loading="lazy"  class="service-icon" src="svgs/check.svg" alt=""></li>
+                                <li>Jatkuvat tuki <img loading="lazy"  class="service-icon" src="svgs/check.svg" alt=""></li>
+                            </ul>
+                            <span class="price">Alk. 3000 €</span>
+                            <a href="">Ota yhteyttä</a>
+                        </li>
+                    </ul>
             </div>
         </section>
         </main>
-
-        <footer>
-            <p>@ 2025 Rasmus Hansen</p>
+        <footer class="footer">
+            <div class="container">
+                <div class="footer-logo-group">
+                    <a class="footer-logo" href="">
+                        <img class="logo" src="svgs/KorpiKoodari(3).svg" alt="">
+                    </a>
+                    <p>Bavarian bergkase swiss cut the cheese. Caerphilly brie red leicester everyone loves cheesy feet fromage cheddar pepper jack. Cheese strings babybel hard cheese fromage taleggio monterey jack cottage cheese melted cheese. 
+                            Cheddar everyone loves monterey jack queso.</p>
+                </div>
+                <ul class="footer-nav">
+                    <li class="footer-nav-li">
+                        <span class="footer-nav-li-header">Linkkejä</span>
+                    </li>
+                    <li class="footer-nav-li">
+                        <a class="footer-nav-link" href="">asd</a>
+                    </li>
+                    <li class="footer-nav-li">
+                        <a class="footer-nav-link" href="">asd</a>
+                    </li>
+                    <li class="footer-nav-li">
+                        <a class="footer-nav-link" href="">asd</a>
+                    </li>
+                </ul>
+                <ul class="footer-contact">
+                    <li class="footer-nav-li">
+                        <span class="footer-contact-li-header">Yhteystiedot</span>
+                    </li>
+                    <li class="footer-nav-li">
+                        <a class="footer-nav-link" href="">asd</a>
+                    </li>
+                    <li class="footer-nav-li">
+                        <a class="footer-nav-link" href="">asd</a>
+                    </li>
+                    <li class="footer-nav-li">
+                        <a class="footer-nav-link" href="">das</a>
+                    </li>
+                    <li class="footer-nav-li">
+                        <a class="footer-nav-link" href="">sd</a>
+                    </li>
+                    <li class="footer-nav-li">
+                        <a class="footer-nav-link" href="">asd</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="footer-bottom">
+                <span class="credits">© Copyright 2025 KorpiKoodari</span>
+                <div class="footer-bottom-links">
+                    <a href="">Tietosuojaseloste</a>
+                </div>
+            </div>
         </footer>
+        <script src="script.js"></script>
 </body>
 </html>
